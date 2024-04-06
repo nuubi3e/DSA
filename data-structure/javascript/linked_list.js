@@ -44,24 +44,3 @@ data.append(20)
 console.log(data);
 // data.display()
 
-const isActive = false
-
-function weirdJS(propertyName, ...values) {
-  console.clear()
-  let classNames = ""
-  let i = 0
-  while (i < values.length) {
-    classNames += `${propertyName[i]}${values[i]}`
-    i++
-  }
-  classNames += ';'
-
-  console.log(classNames.replaceAll('\n', ""));
-
-}
-
-weirdJS`
-background-color: ${isActive ? "red" : "blue"};
-color: ${isActive ? "red" : "blue"};
-font-weight: ${isActive ? "800" : "500"}
-`
